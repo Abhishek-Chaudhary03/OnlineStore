@@ -1,13 +1,27 @@
-<mat-card>
-<mat-card-title>
-  Test Header Page
-</mat-card-title>
-<mat-card-content>
-  <button routerLink="/aboutus">goto aboutus </button>
-  <button routerLink="/footer">goto Footer </button>
-<br/>
-<p>
-  header works!
-</p>
-</mat-card-content>
-</mat-card>
+<mat-toolbar>
+  <button mat-mini-fab color="warn"[matMenuTriggerFor]="Navmenu">
+    <mat-icon>dashboard</mat-icon>
+  </button>
+<span class="example-icon"></span>
+<mat-icon>{{iconTitle}}</mat-icon>
+<span class="example-icon"></span>
+  {{pageTitle}}
+  <span class="example-spacer"></span>
+  <mat-icon [matMenuTriggerFor]="helpmenu">help_outline</mat-icon>
+  <span class="example-icon"></span>
+  <mat-icon>settings</mat-icon>
+
+  <mat-menu #helpmenu="matMenu">
+    <div *ngIf="helpTitle=='Settings Help'">
+      This is Setting Page Help
+    </div>
+    <div *ngIf="helpTitle=='AboutUs Help'">
+      This is About Us Page Help
+    </div>
+    {{helpTitle}}
+  </mat-menu>
+
+  <mat-menu #Navmenu="matMenu">
+    navigation Links
+  </mat-menu>
+</mat-toolbar>
