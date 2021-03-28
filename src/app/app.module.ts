@@ -7,7 +7,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AboutusComponent } from './shared/aboutus/aboutus.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CustommaterialModule } from './/custommaterial.module';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { CustommaterialModule } from './/custommaterial.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustommaterialModule
+    CustommaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

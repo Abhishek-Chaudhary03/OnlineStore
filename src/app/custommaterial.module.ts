@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { BrowserAnimationsModule,NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -31,7 +32,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DomSanitizer} from '@angular/platform-browser';
+import {DomSanitizer} from '@angular/platform-browser';  
 import {MatIconRegistry} from '@angular/material/icon';
 @NgModule({
     imports: [
