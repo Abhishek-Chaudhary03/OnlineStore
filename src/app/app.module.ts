@@ -8,19 +8,24 @@ import { AboutusComponent } from './shared/aboutus/aboutus.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CustommaterialModule } from './/custommaterial.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SetproductComponent } from './setproduct/setproduct.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     AboutusComponent,
-   SttingsComponent
+   SttingsComponent,
+   SetproductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CustommaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

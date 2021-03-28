@@ -5,11 +5,11 @@
 export const environment = {
   production: false,
   social: {
-    fblink: 'https://www.facebook.com/elishconsulting',
-    linkedin: 'https://www.linkedin.com/in/ashuklax/',
-    github: 'https://github.com/AmitXShukla',
-    emailid: 'info@elishconsulting.com',
-    homelink: 'https://alivetracking.firebaseapp.com/aboutus'
+    fblink: 'https://www.facebook.com/',
+    linkedin: 'https://www.linkedin.com/home/?originalSubdomain=in',
+    github: 'https://github.com/Abhishek-Chaudhary03',
+    emailid: 'abhishek21chaudhary@gmail.com',
+   
   },
 };
 

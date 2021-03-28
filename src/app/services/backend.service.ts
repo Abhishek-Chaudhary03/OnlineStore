@@ -34,5 +34,22 @@ export class BackendService {
         }
     )
   }
+  getProducts(collType)
+  {
+    let fakeresponse = {
+      'category': "test",
+       'scategory': "Test",
+        'name' : "Product Type",
+         'price': "300",
+          '_id' : "123"
+    };
+    return Observable.create (
+      observer => {
+        setTimeout ( () => {
+          observer.next(fakeresponse)
+        },2000)
+        }
+    )
+  }
   }
 
